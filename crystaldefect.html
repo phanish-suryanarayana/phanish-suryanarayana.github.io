@@ -36,15 +36,15 @@
 
 <body id="page-top">
 
-  <section class="bg-light" id="Real Space" style="margin: 70px">
+  <section class="bg-light" id="cystaldefectdft" style="margin: 70px">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Real-space DFT</h2>
-          <br><h2 class="section-heading text-uppercase">SPARC: Simulation Package for Ab-initio Real-space Calculations</h2>
+          <h2 class="section-heading text-uppercase">Crystal defect DFT</h2>
+          <br><h2 class="section-heading text-uppercase">Coarse-grained DFT: Ab-initio framework for the study of crystal defects</h2>
           <h3 class="section-subheading" align="justify">
-          <br>Traditional methods for DFT utilize the plane-wave basis. However, the non-locality of plane-waves makes them unsuitable for the development of approaches that scale linearly with respect to the number of atoms.  Furthermore, developing parallel implementations that can efficiently utilize large-scale computer architectures is challenging. Finally, the need for periodic boundary conditions limits their effectiveness in the study of non-periodic and localized systems such as defects, as well as non-traditional symmetries like cyclic and helical. To overcome these limitations, we have developed a new real-space formulation and parallel implementation of DFT referred to as SPARC (Refs. [SPARC1,SPARC2]), which is highly competitive with plane-wave codes that have been developed by large teams of researchers over a couple of decades. SPARC has the potential to significantly impact a number of other fields including mechanics, materials science, physics, and chemistry, as evidenced by the fact that a large fraction of the world's computational resources are used for performing DFT calculations.
-        </h3>
+          <br>Crystal defects, though present in relatively minute concentrations, play a significant role in determining material properties. This necessitates an accurate characterization of defects at physically relevant defect concentrations (parts per million), which represents a unique challenge since both the electronic structure of the defect core as well as the long range elastic field need to be resolved simultaneously. Since routine DFT calculations are limited to hundreds of atoms, this represents a truly challenging open problem. In order to solve this, we have developed a method to coarse-grain DFT that is solely based on approximation theory, without the introduction of any new equations and resultant spurious physics (Ref [CGDFT1]). This work has opened an avenue for the study of extended crystal defects using DFT, which represents a vital step towards understanding the deformation and failure mechanisms in solids. We are currently utilizing this framework to characterize dislocations, the interactions between them, and their interaction with macroscopic fields (e.g. strain).
+          </h3>
 
         </div>
       </div>
