@@ -14,11 +14,21 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #FFFFFF;
 }
 
 a:hover {
   color: #fec503;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #FFFFFF;
 }
 
 .text-primary {
