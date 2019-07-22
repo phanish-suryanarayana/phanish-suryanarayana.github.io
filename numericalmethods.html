@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140681697-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140681697-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Numerical methods</title>
+
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/brand.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/v4-shims.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/fontawesome.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <section class="bg-light" id="numericalmethods">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Numerical methods</h2>
+          <!-- <br><h2 class="section-heading text-uppercase">SQDFT: Ab-intio framework for materials under extreme conditons</h2> -->
+          <h3 class="section-subheading" align="justify">
+          <br>We have developed numerical methods for the solution of linear, non-linear, and eigenvalue problems. Though we have primarily applied these techniques in DFT, they are applicable to a variety of fields
+          <ul style="list-style-type:circle;">
+            <br><li>
+                <b>Alternating Anderson-Richardson (AAR) method:</b> We have developed the Alternating Anderson-Richardson (AAR) method: an efficient and scalable alternative to preconditioned Krylov solvers for the solution of large, sparse linear systems on high performance computing platforms (Refs. [AAR1,AAR2]). AAR is equally applicable to symmetric as well as non-symmetric linear systems and does not make any assumption regarding the spectrum of the coefficient matrix. Overall, AAR offers a robust and efficient alternative to current state-of-the-art solvers, with increasing advantages as the number of processors grows. Analogous solvers have applications in other fields for accelerating linear fixed-point iterations.
+            </li>
+            <br><li>
+                <b>Periodic Pulay and r-Pulay methods:</b> Pulay's Direct Inversion in the Iterative Subspace (DIIS) method is one of the most widely used mixing schemes for accelerating the self-consistent solution of electronic structure problems. We have developed the Periodic Pulay method (Ref. [PP]), which represents a simple generalization of DIIS in which Pulay extrapolation is performed at periodic intervals rather than on every self-consistent field iteration, and linear mixing is performed on all other iterations. We have also developed an efficient way to introduce restarts within the Pulay method, which we refer to as the r-Pulay method. Overall, we have found that Periodic Pulay and r-Pulay are significantly more efficient and robust compared to the Pulay method. Analogous solvers have applications in other fields for accelerating nonlinear fixed-point iterations.
+            </li>
+            <br><li>
+                <b>Discrete Discontinuous Basis Projection (DDBP) method:</b> The DDBP approach (Ref. [DDBP]) to accelerate real-space electronic structure methods several fold, without loss of accuracy, by reducing the dimension of the discrete eigenproblem that must be solved. In DDBP, we construct an efficient, systematically improvable, discontinuous basis spanning the occupied subspace and project the real-space Hamiltonian onto the span. Accurate energies and forces are obtained with 8--25 basis functions per atom, reducing the dimension of the associated real-space eigenproblems by 1--3 orders of magnitude. Analogous solvers have applications in other fields for solving large, sparse eigenproblems.
+            </li>
+        </h3>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; MPM 2019</span>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <!--
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
