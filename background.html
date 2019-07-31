@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,7 +98,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a>
           </li>
-
         </ul>
       </div>
     </div>
@@ -113,26 +113,19 @@
   </header>
 
   <!-- Services -->
-  <section class="bg-light" id="Numericalmethods">
+  <section class="bg-light" id="background">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h2 class="section-heading text-uppercase" style="margin-top: -60px;">Numerical methods</h2>
+          <h2 class="section-heading text-uppercase" style="margin-top: -60px;">Background on Kohn-Sham DFT</h2>
 	  
-          <h3 class="section-subheading" align="justify" style="margin-right: 45px; margin-left: 55px;">
+          <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
           <p style="line-height: normal; ">
-            <br>We have developed numerical methods for the solution of linear, non-linear, and eigenvalue problems. Though we have primarily applied these techniques in DFT, they are applicable to a variety of fields
-          <ul>
-            <br><li>
-                <b>Alternating Anderson-Richardson (AAR) method:</b> We have developed the Alternating Anderson-Richardson (AAR) method: an efficient and scalable alternative to preconditioned Krylov solvers for the solution of large, sparse linear systems on high performance computing platforms (Refs. [<a href="https://www.sciencedirect.com/science/article/pii/S0021999115007585" style="color: #4E4337;">AAR1</a>,<a href="https://www.sciencedirect.com/science/article/pii/S001046551830256X" style="color: #4E4337;">AAR2</a>]). AAR is equally applicable to symmetric as well as non-symmetric linear systems and does not make any assumption regarding the spectrum of the coefficient matrix. Overall, AAR offers a robust and efficient alternative to current state-of-the-art solvers, with increasing advantages as the number of processors grows. Analogous solvers have applications in other fields for accelerating linear fixed-point iterations.
-            </li>
-            <br><li>
-                <b>Periodic Pulay and r-Pulay methods:</b> Pulay's Direct Inversion in the Iterative Subspace (DIIS) method is one of the most widely used mixing schemes for accelerating the self-consistent solution of electronic structure problems. We have developed the Periodic Pulay method (Ref. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0009261416000464" style="color: #4E4337;">PP</a>]), which represents a simple generalization of DIIS in which Pulay extrapolation is performed at periodic intervals rather than on every self-consistent field iteration, and linear mixing is performed on all other iterations. We have also developed an efficient way to introduce restarts within the Pulay method, which we refer to as the r-Pulay method. Overall, we have found that Periodic Pulay and r-Pulay are significantly more efficient and robust compared to the Pulay method. Analogous solvers have applications in other fields for accelerating nonlinear fixed-point iterations.
-            </li>
-            <br><li>
-                <b>Discrete Discontinuous Basis Projection (DDBP) method:</b> The DDBP approach (Ref. [<a href="https://aip.scitation.org/doi/10.1063/1.5037794" style="color: #4E4337;">DDBP</a>]) to accelerate real-space electronic structure methods several fold, without loss of accuracy, by reducing the dimension of the discrete eigenproblem that must be solved. In DDBP, we construct an efficient, systematically improvable, discontinuous basis spanning the occupied subspace and project the real-space Hamiltonian onto the span. Accurate energies and forces are obtained with 8--25 basis functions per atom, reducing the dimension of the associated real-space eigenproblems by 1--3 orders of magnitude. Analogous solvers have applications in other fields for solving large, sparse eigenproblems.
-            </li>
-        
+           <br>The Schrodinger equation is fundamental for describing the quantum mechanical electronic structure of matter, since it does not require any empirical input. However, the solution of the Schrodinger equation is exceedingly expensive, and this limits the size of systems that can be directly evaluated to tens of electrons. Numerous approaches have been proposed to reduce the computational cost of the solution of the Schrodinger equation. These approaches include the widely used DFT of Hohenberg and Kohn, for which Kohn won the Nobel prize in Chemistry in 1998.<br>
+
+In their seminal work, Hohenberg and Kohn proved the existence of a one-to-one correspondence between the ground state electron density and the ground state wavefunction of a many-particle system. By this correspondence, the electron density replaces the many-body electronic wavefunction as the fundamental unknown field, thereby greatly reducing the dimensionality and computational complexity of the problem. The most common present-day implementation of DFT is through the Kohn-Sham method, in which the intractable many-body problem of interacting electrons is reduced to a tractable problem of non-interacting electrons moving in an effective potential.<br>
+
+Over the past few decades, DFT has been extensively used for understanding and predicting a wide array of material behavior, including their electronic, mechanical, thermal, and optical properties.  The tremendous popularity of DFT&#8212;free from any empirical parameters by virtue of its origins in the first principles of quantum mechanics&#8212;stems from its high accuracy to cost ratio when compared to other such ab-initio theories. However, the efficient and accurate solution of the DFT problem still remains a formidable task, which limits the length and time scales accessible to DFT simulations.
           </p>
         </h3>
        </div>
@@ -183,33 +176,6 @@
 
 </body>
 
-</html>
+</html>        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         

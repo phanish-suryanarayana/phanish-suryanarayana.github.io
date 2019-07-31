@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,26 +114,15 @@
   </header>
 
   <!-- Services -->
-  <section class="bg-light" id="Numericalmethods">
+  <section class="bg-light" id="SPARCX">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h2 class="section-heading text-uppercase" style="margin-top: -60px;">Numerical methods</h2>
-	  
-          <h3 class="section-subheading" align="justify" style="margin-right: 45px; margin-left: 55px;">
+         
+	  <br><h3 class="section-heading text-uppercase" style="margin-top: -60px;">SPARC-X: Simulation Package for Real-space Kohn-Sham Density Functional Theory</h3>
+          <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
           <p style="line-height: normal; ">
-            <br>We have developed numerical methods for the solution of linear, non-linear, and eigenvalue problems. Though we have primarily applied these techniques in DFT, they are applicable to a variety of fields
-          <ul>
-            <br><li>
-                <b>Alternating Anderson-Richardson (AAR) method:</b> We have developed the Alternating Anderson-Richardson (AAR) method: an efficient and scalable alternative to preconditioned Krylov solvers for the solution of large, sparse linear systems on high performance computing platforms (Refs. [<a href="https://www.sciencedirect.com/science/article/pii/S0021999115007585" style="color: #4E4337;">AAR1</a>,<a href="https://www.sciencedirect.com/science/article/pii/S001046551830256X" style="color: #4E4337;">AAR2</a>]). AAR is equally applicable to symmetric as well as non-symmetric linear systems and does not make any assumption regarding the spectrum of the coefficient matrix. Overall, AAR offers a robust and efficient alternative to current state-of-the-art solvers, with increasing advantages as the number of processors grows. Analogous solvers have applications in other fields for accelerating linear fixed-point iterations.
-            </li>
-            <br><li>
-                <b>Periodic Pulay and r-Pulay methods:</b> Pulay's Direct Inversion in the Iterative Subspace (DIIS) method is one of the most widely used mixing schemes for accelerating the self-consistent solution of electronic structure problems. We have developed the Periodic Pulay method (Ref. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0009261416000464" style="color: #4E4337;">PP</a>]), which represents a simple generalization of DIIS in which Pulay extrapolation is performed at periodic intervals rather than on every self-consistent field iteration, and linear mixing is performed on all other iterations. We have also developed an efficient way to introduce restarts within the Pulay method, which we refer to as the r-Pulay method. Overall, we have found that Periodic Pulay and r-Pulay are significantly more efficient and robust compared to the Pulay method. Analogous solvers have applications in other fields for accelerating nonlinear fixed-point iterations.
-            </li>
-            <br><li>
-                <b>Discrete Discontinuous Basis Projection (DDBP) method:</b> The DDBP approach (Ref. [<a href="https://aip.scitation.org/doi/10.1063/1.5037794" style="color: #4E4337;">DDBP</a>]) to accelerate real-space electronic structure methods several fold, without loss of accuracy, by reducing the dimension of the discrete eigenproblem that must be solved. In DDBP, we construct an efficient, systematically improvable, discontinuous basis spanning the occupied subspace and project the real-space Hamiltonian onto the span. Accurate energies and forces are obtained with 8--25 basis functions per atom, reducing the dimension of the associated real-space eigenproblems by 1--3 orders of magnitude. Analogous solvers have applications in other fields for solving large, sparse eigenproblems.
-            </li>
-        
+           <br>Traditional methods for DFT utilize the plane-wave basis. However, the non-locality of plane-waves makes them unsuitable for the development of approaches that scale linearly with respect to the number of atoms.  Furthermore, developing parallel implementations that can efficiently utilize large-scale computer architectures is challenging. Finally, the need for periodic boundary conditions limits their effectiveness in the study of non-periodic and localized systems such as defects, as well as non-traditional symmetries like cyclic and helical. To overcome these limitations, we have developed a new real-space formulation and parallel implementation of DFT referred to as SPARC (Refs. [<a href="https://www.sciencedirect.com/science/article/pii/S0010465517300711" style="color: #4E4337;">SPARC1 </a>,<a href="https://www.sciencedirect.com/science/article/pii/S0010465516303046" style="color: #4E4337;">SPARC2</a>]), which is highly competitive with plane-wave codes that have been developed by large teams of researchers over a couple of decades. SPARC has the potential to significantly impact a number of other fields including mechanics, materials science, physics, and chemistry, as evidenced by the fact that a large fraction of the world's computational resources are used for performing DFT calculations.
           </p>
         </h3>
        </div>
@@ -183,33 +173,6 @@
 
 </body>
 
-</html>
+</html>        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
