@@ -4,6 +4,10 @@
 
 <head>  
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144641788-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -153,18 +157,53 @@
           </h4>
           <p class="text-muted">Latest Stable version (1.1)</p>
         </div>-->
-	
-       <div class="col-sm-12 text-center">
-	<h3 style="color:#360a0a;" > I. M-SPARC: MATLAB-Simulation Package for Ab-initio Real-space Calculations </h3>	
+	<div class="col-sm-12 text-center">
+  <h3 style="color:#360a0a;" > I. SPARC: Simulation Package for Ab-initio Real-space Calculations </h3>  
+  <br>
+  <br>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-8 text-center">
+  <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
+  <p style="line-height: normal; ">
+  <br>
+SPARC is an open-source software package for the accurate, efficient, and scalable solution of the Kohn-Sham equations, referred to as SPARC. The package is straightforward to install/use and highly competitive with state-of-the-art planewave codes, demonstrating comparable performance on a small number of processors and order-of-magnitude advantages as the number of processors increases. Notably, SPARC brings solution times down to a few seconds for systems with \(\mathcal{O}(100-500)\) atoms on large-scale parallel computers, outperforming planewave counterparts by an order of magnitude and more.
+  </p>
+
+  <p style="margin-bottom: -1px;font-family:Arial, Helvetica, sans-serif;"> <b> Publications </b></p>
+  <p style="line-height:25px" ><small>
+            <a href="https://arxiv.org/abs/2005.10431" target="_blank"  style="color: #0000EE; font-size:15px; font-family:verdana;">&#x2160;. Q. Xu, A. Sharma, B. Comer, H. Huang, E. Chow, A.J. Medford, J.E. Pask, and P. Suryanarayana, 2020. SPARC: Simulation Package for Ab-initio Real-space Calculations. <i> arXiv preprint arXiv:2005.10431.</i></a></small> </p>
+    </h3>
+  </div>
+
+  <div class="col-sm-4 text-center" style="margin-top: 14px;">
+          <span class="fa-stack fa-6x">
+           <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">
+            <a href="https://github.com/SPARC-X/SPARC" target="_blank">SPARC Github Page</a>
+            
+          </h4>
+  </div>
+  
+
+
+
+
+
+  <div class="col-sm-12 text-center">
+	<h3 style="color:#360a0a;" > II. M-SPARC: MATLAB-Simulation Package for Ab-initio Real-space Calculations </h3>	
 	<br>
 	<br>
 	</div>
 	</div>
 	<div class="row">
 	<div class="col-sm-8 text-center">
-          <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
-          <p style="line-height: normal; ">
-           <br>
+  <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
+  <p style="line-height: normal; ">
+  <br>
 Matlab-Simulation Package for Ab-initio Real-space Calculations (M-SPARC) is a real-space code for performing electronic structure calculations based on Kohn-Sham Density Functional Theory (DFT). It provides a rapid prototyping platform for the development and testing of new algorithms and methods in real-space DFT. Additionally, it provides a convenient avenue for the accurate first principles study of small to moderate sized systems.
 	</p>
 
@@ -184,14 +223,50 @@ Matlab-Simulation Package for Ab-initio Real-space Calculations (M-SPARC) is a r
             
           </h4>
 	</div>
+
+
+
+	<div class="col-sm-12 text-center">
+	<h3 style="color:#360a0a;" > III.  Linear Solvers</h3>	
+	<br>
+	<br>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-sm-8 text-center">
+  <h3 class="section-subheading" align="justify" style="margin-right: 15px; margin-left: 15px;">
+  <p style="line-height: normal; ">
+  <br>
+The Alternating Anderson-Richardson (AAR) method provides an efficient and scalable alternative to current state-of-the-art preconditioned Krylov solvers for the solution of large, sparse linear systems on high performance computing platforms, with increasing advantage as the number of processors is increased. Moreover, the method is simple and general, applying to symmetric and nonsymmetric systems, real and complex alike.
+	</p>
+
+  <p style="margin-bottom: -1px;font-family:Arial, Helvetica, sans-serif;"> <b> Publications </b></p>
+  <p style="line-height:25px" ><small>
+            <a href="https://doi.org/10.1016/j.cpc.2018.07.007" target="_blank"  style="color: #0000EE; font-size:15px; font-family:verdana;">&#x2160;. P. Suryanarayana, P.P. Pratapa and J.E. Pask, 2019. Alternating Anderson–Richardson method: An efficient alternative to preconditioned Krylov methods for large, sparse linear systems. <i>Computer Physics Communications</i>, 234, pp.278-285.</a></small> </p>
+
+            <a href="https://doi.org/10.1016/j.jcp.2015.11.018" target="_blank"  style="color: #0000EE; font-size:15px; font-family:verdana;">&#x2161;. P.P. Pratapa, P. Suryanarayana and J.E. Pask, 2016. Anderson acceleration of the Jacobi iterative method: An efficient alternative to Krylov methods for large, sparse linear systems. <i>Journal of Computational Physics</i>, 306, pp.43-54.</a></small> </p>
+    </h3>
+  </div>
+
+	<div class="col-sm-4 text-center" style="margin-top: 14px;">
+          <span class="fa-stack fa-6x">
+           <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">
+            <a href="https://github.com/phanish-suryanarayana/LinearSolvers" target="_blank">Linear solvers Github Page</a>
+            
+          </h4>
+	</div>
 	
+
          <!-- <p class="text-muted">M-SPARC Github Page</p>--> 
 	
      </div>
     </div>
   </section>
 
-<section id="download">
+<!-- <section id="download">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -199,7 +274,7 @@ Matlab-Simulation Package for Ab-initio Real-space Calculations (M-SPARC) is a r
 	</div>
       </div>
     </div>
-</section>
+</section> -->
 
 
 
