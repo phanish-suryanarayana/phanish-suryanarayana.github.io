@@ -1,4 +1,4 @@
-# SPARC-X webpage source code
+# Phanish Suryanarayana research group webpage source code
 
 google analytics tracking number
 
